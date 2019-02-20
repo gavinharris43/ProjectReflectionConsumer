@@ -13,7 +13,7 @@ public class TraineeReceiver {
 	@Autowired
     private MongoTraineeRepo repo;
 	
-	@JmsListener(destination = "InspectorFacadeQueue", containerFactory = "InspectorFactory")
+	@JmsListener(destination = "InspectorFacadeQueue", containerFactory = "myFactory")
     public void storeTraineesFromDatabase(SentTrainee sentTrainee) {
         repo.save(sentTrainee);
     }

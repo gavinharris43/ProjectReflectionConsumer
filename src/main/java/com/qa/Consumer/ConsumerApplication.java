@@ -15,16 +15,16 @@ import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.converter.MessageType;
 import org.springframework.web.client.RestTemplate;
 
-@EnableJms
 @SpringBootApplication
+@EnableJms
 public class ConsumerApplication {
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(ConsumerApplication.class, args);
 	}
-	
+
 	@Bean
-	public JmsListenerContainerFactory<?> InspectorFactory(ConnectionFactory connectionFactory,
+	public JmsListenerContainerFactory<?> myFactory(ConnectionFactory connectionFactory,
 													DefaultJmsListenerContainerFactoryConfigurer configurer) {
 		DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
 		configurer.configure(factory, connectionFactory);

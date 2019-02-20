@@ -13,7 +13,7 @@ public class TrainerReceiver {
 	@Autowired
     private MongoTrainerRepo repo;
 	
-	@JmsListener(destination = "InspectorFacadeQueue", containerFactory = "InspectorFactory")
+	@JmsListener(destination = "InspectorFacadeQueue", containerFactory = "myFactory")
     public void receiveMessage(SentTrainer sentTrainer) {
         repo.save(sentTrainer);
     }
