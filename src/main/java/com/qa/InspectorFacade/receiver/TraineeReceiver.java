@@ -14,7 +14,7 @@ public class TraineeReceiver {
     private MongoTraineeRepo repo;
 	
 	@JmsListener(destination = "InspectorFacadeQueue", containerFactory = "InspectorFactory")
-    public void receiveMessage(SentTrainee sentTrainee) {
+    public void storeTraineesFromDatabase(SentTrainee sentTrainee) {
         repo.save(sentTrainee);
     }
 

@@ -3,8 +3,7 @@ package com.qa.InspectorFacade.persistence.domain;
 
 public class SentCohort {
 	
-	private Long cohortId;
-	
+	private Long cohortId;	
 	private String cohortName;
 	
 	
@@ -38,9 +37,8 @@ public class SentCohort {
 		
 	}
 	
-	public SentCohort(Long cohortId, String cohortName, SentTrainee sentTrainee) {
-		this.cohortId = cohortId;
+	public SentCohort(Long cohortid, String cohortName) {
+		this.cohortId = cohortid;
 		this.cohortName = cohortName;
-		this.sentTrainee = sentTrainee;
 	}
 }

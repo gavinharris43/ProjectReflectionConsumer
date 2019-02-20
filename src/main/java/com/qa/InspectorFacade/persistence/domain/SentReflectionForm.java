@@ -74,13 +74,12 @@ public class SentReflectionForm {
 		this.weekNumber = weekNumber;
 	}
 	
-	public SentReflectionForm() {}
+public SentReflectionForm() {}
 	
-	public SentReflectionForm(Long id, int weekNumber, int howsYourWeek,
-			String whatWentWell, String howToKeepDoingWell, String whatWentBad,
-			String howToStopDoingBad) {
+	public SentReflectionForm(Long formid, int weekNumber, int howsYourWeek, String whatWentWell, String howToKeepDoingWell,
+			String whatWentBad, String howToStopDoingBad) {
 		
-		this.formId = id;
+		this.formId = formid;
 		this.weekNumber = weekNumber;
 		this.howsYourWeek = howsYourWeek;
 		this.whatWentWell = whatWentWell;

@@ -55,8 +55,7 @@ public class SentTrainer {
 	
 	public SentTrainer() {}
 	
-	public SentTrainer(Long trainerid, String firstName, String lastName, String email,
-			String password) {
+	public SentTrainer(Long trainerid, String firstName, String lastName, String email, String password) {
 	
 		this.trainerId = trainerid;
 		this.firstName = firstName;

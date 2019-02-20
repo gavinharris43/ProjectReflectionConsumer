@@ -63,27 +63,16 @@ public class SentTrainee {
 		this.startDate = startDate;
 	}
 	
-	public SentReflectionForm getSentForm() {
-		return sentReflectionForm;
-	}
-	
-	public void setSentForm(SentReflectionForm sentReflectionForm) {
-		this.sentReflectionForm = sentReflectionForm;
-	}
-	
-	private SentReflectionForm sentReflectionForm;
 	
 	public SentTrainee() {}
 	
-	public SentTrainee(Long traineeId, String firstName, String lastName, String email,
-			String password, String startDate, SentReflectionForm sentReflectionForm) {
-		this.traineeId = traineeId;
+	public SentTrainee(Long traineeid, String firstName, String lastName, String email, String password, String startDate) {
+		this.traineeId = traineeid;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
 		this.startDate = startDate;
-		this.sentReflectionForm = sentReflectionForm;
 	}
 
 
