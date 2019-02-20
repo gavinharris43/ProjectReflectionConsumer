@@ -13,7 +13,7 @@ public class CohortReceiver {
 	@Autowired
     private MongoCohortRepo repo;
 	
-	@JmsListener(destination = "InspectorFacadeQueue", containerFactory = "InspectorFacade")
+	@JmsListener(destination = "InspectorFacadeQueue", containerFactory = "InspectorFactory")
     public void receiveMessage(SentCohort sentCohort) {
         repo.save(sentCohort);
     }
