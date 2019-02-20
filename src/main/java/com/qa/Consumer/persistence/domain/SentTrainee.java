@@ -1,8 +1,8 @@
-package com.qa.InspectorFacade.persistence.domain;
+package com.qa.Consumer.persistence.domain;
 
-public class SentTrainer {
+public class SentTrainee {
 
-	private Long trainerId;
+	private Long traineeId;
 	
 	private String firstName;
 	
@@ -11,6 +11,8 @@ public class SentTrainer {
 	private String email;
 	
 	private String password;
+	
+	private String startDate;
 	
 
 	public String getFirstName() {
@@ -45,23 +47,33 @@ public class SentTrainer {
 		this.password = password;
 	}
 	
-	public Long getTrainerId() {
-		return trainerId;
+	public Long getTraineeId() {
+		return traineeId;
 	}
 	
-	public void setTrainerId(Long trainerId){
-		this.trainerId = trainerId;
+	public void setTraineeId(Long traineeId){
+		this.traineeId = traineeId;
 	}
 	
-	public SentTrainer() {}
+	public String getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
 	
-	public SentTrainer(Long trainerid, String firstName, String lastName, String email, String password) {
 	
-		this.trainerId = trainerid;
+	public SentTrainee() {}
+	
+	public SentTrainee(Long traineeid, String firstName, String lastName, String email, String password, String startDate) {
+		this.traineeId = traineeid;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
+		this.startDate = startDate;
 	}
-	
+
+
 }

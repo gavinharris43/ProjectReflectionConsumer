@@ -1,11 +1,11 @@
-package com.qa.InspectorFacade.receiver;
+package com.qa.Consumer.receiver;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
-import com.qa.InspectorFacade.persistence.domain.SentCohort;
-import com.qa.InspectorFacade.persistence.repository.MongoCohortRepo;
+import com.qa.Consumer.persistence.domain.SentCohort;
+import com.qa.Consumer.persistence.repository.MongoCohortRepo;
 
 @Component
 public class CohortReceiver {

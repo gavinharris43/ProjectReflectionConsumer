@@ -1,4 +1,4 @@
-package com.qa.InspectorFacade.persistence.domain;
+package com.qa.Consumer.persistence.domain;
 
 
 public class SentReflectionForm {
