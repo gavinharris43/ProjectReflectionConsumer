@@ -14,6 +14,17 @@ public class SentTrainee {
 	
 	private String startDate;
 	
+	public SentTrainee() {}
+	
+	public SentTrainee(Long traineeid, String firstName, String lastName, String email, String password, String startDate) {
+		this.traineeId = traineeid;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.password = password;
+		this.startDate = startDate;
+	}
+	
 
 	public String getFirstName() {
 		return firstName;
@@ -62,18 +73,5 @@ public class SentTrainee {
 	public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}
-	
-	
-	public SentTrainee() {}
-	
-	public SentTrainee(Long traineeid, String firstName, String lastName, String email, String password, String startDate) {
-		this.traineeId = traineeid;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-		this.password = password;
-		this.startDate = startDate;
-	}
-
 
 }
