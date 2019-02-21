@@ -12,6 +12,17 @@ public class SentTrainer {
 	
 	private String password;
 	
+	public SentTrainer() {}
+	
+	public SentTrainer(Long trainerid, String firstName, String lastName, String email, String password) {
+	
+		this.trainerId = trainerid;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.password = password;
+	}
+	
 
 	public String getFirstName() {
 		return firstName;
@@ -51,17 +62,6 @@ public class SentTrainer {
 	
 	public void setTrainerId(Long trainerId){
 		this.trainerId = trainerId;
-	}
-	
-	public SentTrainer() {}
-	
-	public SentTrainer(Long trainerid, String firstName, String lastName, String email, String password) {
-	
-		this.trainerId = trainerid;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-		this.password = password;
 	}
 	
 }

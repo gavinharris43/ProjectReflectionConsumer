@@ -17,6 +17,20 @@ public class SentReflectionForm {
 	
 	private String howToStopDoingBad;
 	
+	public SentReflectionForm() {}
+	
+	public SentReflectionForm(Long formid, int weekNumber, int howsYourWeek, String whatWentWell, String howToKeepDoingWell,
+			String whatWentBad, String howToStopDoingBad) {
+		
+		this.formId = formid;
+		this.weekNumber = weekNumber;
+		this.howsYourWeek = howsYourWeek;
+		this.whatWentWell = whatWentWell;
+		this.howToKeepDoingWell = howToKeepDoingWell;
+		this.whatWentBad = whatWentBad;
+		this.howToStopDoingBad = howToStopDoingBad;
+	}
+	
 
 	public int getHowsYourWeek() {
 		return howsYourWeek;
@@ -72,19 +86,5 @@ public class SentReflectionForm {
 
 	public void setWeekNumber(int weekNumber) {
 		this.weekNumber = weekNumber;
-	}
-	
-public SentReflectionForm() {}
-	
-	public SentReflectionForm(Long formid, int weekNumber, int howsYourWeek, String whatWentWell, String howToKeepDoingWell,
-			String whatWentBad, String howToStopDoingBad) {
-		
-		this.formId = formid;
-		this.weekNumber = weekNumber;
-		this.howsYourWeek = howsYourWeek;
-		this.whatWentWell = whatWentWell;
-		this.howToKeepDoingWell = howToKeepDoingWell;
-		this.whatWentBad = whatWentBad;
-		this.howToStopDoingBad = howToStopDoingBad;
 	}
 }
