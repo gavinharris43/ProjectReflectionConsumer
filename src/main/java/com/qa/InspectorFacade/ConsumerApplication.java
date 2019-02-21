@@ -1,4 +1,4 @@
-package com.qa.Consumer;
+package com.qa.InspectorFacade;
 
 import javax.jms.ConnectionFactory;
 
