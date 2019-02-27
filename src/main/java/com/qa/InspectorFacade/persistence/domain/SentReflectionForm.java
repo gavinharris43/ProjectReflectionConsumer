@@ -1,9 +1,12 @@
 package com.qa.InspectorFacade.persistence.domain;
 
-
 public class SentReflectionForm {
 
 	private Long formId;
+	
+	private Long traineeId;
+	
+	private String email;
 	
 	private int weekNumber;
 	
@@ -19,10 +22,11 @@ public class SentReflectionForm {
 	
 	public SentReflectionForm() {}
 	
-	public SentReflectionForm(Long formid, int weekNumber, int howsYourWeek, String whatWentWell, String howToKeepDoingWell,
+	public SentReflectionForm(Long traineeId, String email, int weekNumber, int howsYourWeek, String whatWentWell, String howToKeepDoingWell,
 			String whatWentBad, String howToStopDoingBad) {
 		
-		this.formId = formid;
+		this.traineeId = traineeId;
+		this.email = email;
 		this.weekNumber = weekNumber;
 		this.howsYourWeek = howsYourWeek;
 		this.whatWentWell = whatWentWell;
@@ -31,6 +35,22 @@ public class SentReflectionForm {
 		this.howToStopDoingBad = howToStopDoingBad;
 	}
 	
+
+	public Long getTraineeId() {
+		return traineeId;
+	}
+
+	public void setTraineeId(Long traineeId) {
+		this.traineeId = traineeId;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
 	public int getHowsYourWeek() {
 		return howsYourWeek;

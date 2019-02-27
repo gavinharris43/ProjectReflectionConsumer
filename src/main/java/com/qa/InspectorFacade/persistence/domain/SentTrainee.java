@@ -14,15 +14,21 @@ public class SentTrainee {
 	
 	private String startDate;
 	
+	private float averageHowsYourWeek;
+	
+	private int currentHowsYourWeek;
+	
 	public SentTrainee() {}
 	
-	public SentTrainee(Long traineeid, String firstName, String lastName, String email, String password, String startDate) {
+	public SentTrainee(Long traineeid, String firstName, String lastName, String email, String password, String startDate, float averageHowsYourWeek, int currentHowsYourWeek) {
 		this.traineeId = traineeid;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
 		this.startDate = startDate;
+		this.averageHowsYourWeek = averageHowsYourWeek;
+		this.currentHowsYourWeek = currentHowsYourWeek;
 	}
 	
 
@@ -72,6 +78,22 @@ public class SentTrainee {
 
 	public void setStartDate(String startDate) {
 		this.startDate = startDate;
+	}
+
+	public float getAverageHowsYourWeek() {
+		return averageHowsYourWeek;
+	}
+
+	public void setAverageHowsYourWeek(float averageHowsYourWeek) {
+		this.averageHowsYourWeek = averageHowsYourWeek;
+	}
+
+	public int getCurrentHowsYourWeek() {
+		return currentHowsYourWeek;
+	}
+
+	public void setCurrentHowsYourWeek(int currentHowsYourWeek) {
+		this.currentHowsYourWeek = currentHowsYourWeek;
 	}
 
 }
