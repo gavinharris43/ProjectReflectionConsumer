@@ -1,6 +1,5 @@
 package com.qa.InspectorFacade.persistence.domain;
 
-
 public class SentCohort {
 	
 	private Long cohortId;	
