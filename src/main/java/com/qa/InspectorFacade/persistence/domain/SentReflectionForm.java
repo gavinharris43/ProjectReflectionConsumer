@@ -1,6 +1,5 @@
 package com.qa.InspectorFacade.persistence.domain;
 
-
 public class SentReflectionForm {
 
 	private Long formId;
@@ -23,10 +22,9 @@ public class SentReflectionForm {
 	
 	public SentReflectionForm() {}
 	
-	public SentReflectionForm(Long formid, int weekNumber, int howsYourWeek, String whatWentWell, String howToKeepDoingWell,
-			String whatWentBad, String howToStopDoingBad, Long traineeId, String email) {
+	public SentReflectionForm(Long traineeId, String email, int weekNumber, int howsYourWeek, String whatWentWell, String howToKeepDoingWell,
+			String whatWentBad, String howToStopDoingBad) {
 		
-		this.formId = formid;
 		this.traineeId = traineeId;
 		this.email = email;
 		this.weekNumber = weekNumber;
